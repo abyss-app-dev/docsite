@@ -38,12 +38,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  logo: logo.png
+  favicon: logo.png
   icon:
-    logo: material/rocket-launch
     repo: fontawesome/brands/github
-  # If you have a custom logo, uncomment and update the path below:
-  # logo: assets/images/logo.png
-  # favicon: assets/images/favicon.png
 
 nav:
   - Home: index.md
