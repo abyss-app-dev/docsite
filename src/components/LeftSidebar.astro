@@ -27,7 +27,7 @@ const getLinkClasses = (link) => {
 			{SIDEBAR.map(item => (item.header ? 
 				<h2 class="mt-4 font-semibold text-slate-700">{item.text}</h2> : 
 				<li class={getLinkClasses(item)}>
-					<a href={item.link}>{item.text}</a>
+					<a href={import.meta.env.BASE_URL + item.link.slice(1)}>{item.text}</a>
 				</li>))}
 		</ul>
 	</nav>

@@ -4,7 +4,8 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://abyss-app-dev.github.io/docsite',
+  site: 'https://abyss-app-dev.github.io',
+  base: '/docsite',
   integrations: [
     // Enable Preact to support Preact JSX components.
     vue(),
