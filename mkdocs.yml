@@ -15,7 +15,6 @@ theme:
     - navigation.top
     - search.highlight
     - search.share
-    - toc.follow
     - content.code.copy
     - content.code.annotate
   palette:
@@ -42,6 +41,8 @@ theme:
   favicon: logo.png
   icon:
     repo: fontawesome/brands/github
+  extra_css:
+    - stylesheets/extra.css
 
 nav:
   - Home: index.md
