@@ -1,9 +1,9 @@
 site_name: Abyss
 site_description: Accelerate your life with an AI launchpad
-site_url: https://your-username.github.io/abyss-docsite/
+site_url: https://abyss-app-dev.github.io/docsite/
 
-repo_name: abyss-docsite
-repo_url: https://github.com/your-username/abyss-docsite
+repo_name: abyss-app-dev/docsite
+repo_url: https://github.com/abyss-app-dev/docsite
 
 theme:
   name: material
@@ -41,14 +41,31 @@ theme:
   icon:
     logo: material/rocket-launch
     repo: fontawesome/brands/github
+  # If you have a custom logo, uncomment and update the path below:
+  # logo: assets/images/logo.png
+  # favicon: assets/images/favicon.png
 
 nav:
   - Home: index.md
   - Documentation:
     - Getting Started: docs/getting-started.md
     - Installation: docs/installation.md
-    - User Guide: docs/user-guide.md
+    - User Guide: 
+      - Overview: docs/user-guide.md
+      - Core Features:
+        - Chat Interface: docs/features/chat.md
+        - Code Generation: docs/features/code-generation.md
+        - Content Creation: docs/features/content-creation.md
+        - Data Analysis: docs/features/data-analysis.md
+      - Advanced Usage:
+        - Workspaces: docs/advanced/workspaces.md
+        - Plugins: docs/advanced/plugins.md
+        - Automation: docs/advanced/automation.md
     - API Reference: docs/api-reference.md
+    - Troubleshooting:
+      - Common Issues: docs/troubleshooting/common-issues.md
+      - Performance: docs/troubleshooting/performance.md
+      - Support: docs/troubleshooting/support.md
   - Release Log: release-log.md
 
 plugins:
@@ -85,9 +102,9 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/abyss-docsite
+      link: https://github.com/abyss-app-dev/docsite
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/your-username
+      link: https://twitter.com/abyss_ai
   generator: false
 
 copyright: Copyright &copy; 2024 Abyss Project 

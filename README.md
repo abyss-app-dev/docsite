@@ -1,10 +1,10 @@
 # Abyss Documentation Site
 
-> **Accelerate your life with an AI launchpad** 🚀
+> **Accelerate your life with an AI launchpad** :material-rocket-launch:
 
 This repository contains the documentation website for Abyss, built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
-## 🌟 Features
+## :material-sparkles: Features
 
 - **Modern Design**: Built with Material Design principles
 - **Responsive**: Works perfectly on all devices
@@ -12,8 +12,9 @@ This repository contains the documentation website for Abyss, built with [MkDocs
 - **Dark/Light Mode**: Automatic theme switching
 - **Code Highlighting**: Syntax highlighting for 100+ languages
 - **Interactive Elements**: Tabs, admonitions, and more
+- **Icon Pack**: Material Design icons throughout (no emoji dependency)
 
-## 🚀 Quick Start
+## :material-rocket: Quick Start
 
 ### Prerequisites
 
@@ -24,8 +25,8 @@ This repository contains the documentation website for Abyss, built with [MkDocs
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/abyss-docsite.git
-   cd abyss-docsite
+   git clone https://github.com/abyss-app-dev/docsite.git
+   cd docsite
    ```
 
 2. **Create virtual environment**
@@ -55,27 +56,41 @@ mkdocs build
 
 The built site will be in the `site/` directory.
 
-## 📁 Project Structure
+## :material-folder: Project Structure
 
 ```
-abyss-docsite/
+docsite/
 ├── docs/                          # Documentation source files
 │   ├── index.md                   # Homepage
 │   ├── docs/                      # Documentation pages
 │   │   ├── getting-started.md     # Getting started guide
 │   │   ├── installation.md        # Installation instructions
 │   │   ├── user-guide.md          # Complete user guide
-│   │   └── api-reference.md       # API documentation
+│   │   ├── api-reference.md       # API documentation
+│   │   ├── features/              # Feature-specific docs
+│   │   │   ├── chat.md           # Chat interface
+│   │   │   ├── code-generation.md # Code generation
+│   │   │   ├── content-creation.md # Content creation
+│   │   │   └── data-analysis.md   # Data analysis
+│   │   ├── advanced/              # Advanced topics
+│   │   │   ├── workspaces.md     # Workspace management
+│   │   │   ├── plugins.md        # Plugin system
+│   │   │   └── automation.md     # Automation features
+│   │   └── troubleshooting/       # Help and support
+│   │       ├── common-issues.md  # Common problems
+│   │       ├── performance.md    # Performance tips
+│   │       └── support.md        # Getting help
 │   └── release-log.md             # Version history
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml             # GitHub Actions deployment
+│       ├── deploy.yml             # GitHub Actions deployment
+│       └── deploy-simple.yml     # Alternative deployment
 ├── mkdocs.yml                     # MkDocs configuration
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This file
 ```
 
-## 🎨 Customization
+## :material-palette: Customization
 
 ### Theme Configuration
 
@@ -92,6 +107,23 @@ The site uses MkDocs Material with custom configuration in `mkdocs.yml`:
 2. **Navigation**: Update the `nav` section in `mkdocs.yml`
 3. **Styling**: Use Material Design components and extensions
 
+### Nested Navigation Example
+
+The site demonstrates deep navigation hierarchies:
+
+```yaml
+nav:
+  - Documentation:
+    - User Guide: 
+      - Overview: docs/user-guide.md
+      - Core Features:
+        - Chat Interface: docs/features/chat.md
+        - Code Generation: docs/features/code-generation.md
+      - Advanced Usage:
+        - Workspaces: docs/advanced/workspaces.md
+        - Plugins: docs/advanced/plugins.md
+```
+
 ### Markdown Extensions
 
 The site supports advanced Markdown features:
@@ -100,10 +132,10 @@ The site supports advanced Markdown features:
 - **Admonitions**: Info, warning, tip boxes
 - **Tabs**: Content organization
 - **Tables**: Enhanced table formatting
-- **Emoji**: Material Design emoji support
+- **Icons**: Material Design icon support
 - **Math**: LaTeX math rendering
 
-## 🚀 Deployment
+## :material-cloud-upload: Deployment
 
 ### GitHub Pages (Automatic)
 
@@ -124,7 +156,7 @@ mkdocs build
 mkdocs gh-deploy
 ```
 
-## 🔧 Development
+## :material-wrench: Development
 
 ### Adding New Documentation
 
@@ -156,14 +188,29 @@ Use admonitions for important information:
     This is important information to note.
 ```
 
-## 📦 Dependencies
+### Using Icons
+
+Replace emojis with Material Design icons:
+
+```markdown
+# Instead of 🚀
+:material-rocket:
+
+# Instead of ✨  
+:material-sparkles:
+
+# Instead of 💡
+:material-lightbulb:
+```
+
+## :material-package-variant: Dependencies
 
 - **mkdocs-material**: Material Design theme
 - **mkdocs-git-revision-date-localized-plugin**: Git-based page dates
 - **mkdocs-minify-plugin**: HTML/CSS/JS minification
 - **mkdocs-redirects**: URL redirection support
 
-## 🤝 Contributing
+## :material-account-group: Contributing
 
 1. **Fork** the repository
 2. **Create** a feature branch
@@ -177,17 +224,18 @@ Use admonitions for important information:
 - Include code examples where helpful
 - Follow the existing structure and style
 - Test all links and references
+- Use Material Design icons instead of emojis
 
-## 📄 License
+## :material-license: License
 
 This documentation is licensed under the MIT License. See the main Abyss project for software licensing.
 
-## 🔗 Links
+## :material-link: Links
 
-- **Live Site**: [https://your-username.github.io/abyss-docsite/](https://your-username.github.io/abyss-docsite/)
+- **Live Site**: [https://abyss-app-dev.github.io/docsite/](https://abyss-app-dev.github.io/docsite/)
 - **MkDocs Material**: [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/)
-- **Abyss Project**: [https://github.com/your-username/abyss](https://github.com/your-username/abyss)
+- **Abyss Project**: [https://github.com/abyss-app-dev](https://github.com/abyss-app-dev)
 
 ---
 
-*Built with ❤️ using MkDocs Material* 
+*Built with :material-heart: using MkDocs Material* 

@@ -1,12 +1,12 @@
 # Welcome to Abyss
 
-## Accelerate your life with an AI launchpad 🚀
+## Accelerate your life with an AI launchpad :material-rocket-launch:
 
 Abyss is a revolutionary AI-powered platform designed to supercharge your productivity, creativity, and personal growth. Whether you're a developer, creator, entrepreneur, or lifelong learner, Abyss provides the tools and intelligence you need to reach new heights.
 
 ---
 
-## ✨ Key Features
+## :material-sparkles: Key Features
 
 <div class="grid cards" markdown>
 
@@ -38,7 +38,7 @@ Abyss is a revolutionary AI-powered platform designed to supercharge your produc
 
 ---
 
-## 🎯 Perfect For
+## :material-target: Perfect For
 
 === "Developers"
 
@@ -70,7 +70,7 @@ Abyss is a revolutionary AI-powered platform designed to supercharge your produc
 
 ---
 
-## 🚀 Getting Started
+## :material-rocket: Getting Started
 
 Ready to accelerate your potential? Get started with Abyss in just a few steps:
 
@@ -81,14 +81,14 @@ Ready to accelerate your potential? Get started with Abyss in just a few steps:
 
 ---
 
-## 💬 Community & Support
+## :material-forum: Community & Support
 
 Join thousands of users who are already accelerating their lives with Abyss:
 
-- **📚 Documentation**: Comprehensive guides and tutorials
-- **💾 GitHub**: Open source contributions and issues  
-- **🐦 Twitter**: Latest updates and community highlights
-- **💬 Discord**: Real-time support and discussion
+- **:material-book-open:** Documentation**: Comprehensive guides and tutorials
+- **:material-github:** GitHub**: Open source contributions and issues  
+- **:material-twitter:** Twitter**: Latest updates and community highlights
+- **:material-chat:** Discord**: Real-time support and discussion
 
 ---
 
@@ -98,4 +98,4 @@ Join thousands of users who are already accelerating their lives with Abyss:
 
 ---
 
-*Built with ❤️ by the Abyss team* 
+*Built with :material-heart: by the Abyss team* 
