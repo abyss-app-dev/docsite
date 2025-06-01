@@ -1,0 +1,93 @@
+site_name: Abyss
+site_description: Accelerate your life with an AI launchpad
+site_url: https://your-username.github.io/abyss-docsite/
+
+repo_name: abyss-docsite
+repo_url: https://github.com/your-username/abyss-docsite
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/rocket-launch
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Getting Started: docs/getting-started.md
+    - Installation: docs/installation.md
+    - User Guide: docs/user-guide.md
+    - API Reference: docs/api-reference.md
+  - Release Log: release-log.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - abbr
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/abyss-docsite
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your-username
+  generator: false
+
+copyright: Copyright &copy; 2024 Abyss Project 
