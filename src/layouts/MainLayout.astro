@@ -10,12 +10,15 @@ import '../styles/main.scss';
 const { content = {} } = Astro.props;
 const currentPage = new URL(Astro.request.url).pathname;
 // const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
+
+// Build canonical URL using modern Astro approach
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html dir={content.dir ?? 'ltr'} lang={content.lang ?? 'en-us'} class="initial">
 	<head>
 		<HeadCommon />
-		<HeadSEO {content} canonicalURL={Astro.canonicalURL} />
+		<HeadSEO {content} canonicalURL={canonicalURL} />
 		<title>{content.title ? `${content.title} 🚀 ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
 	</head>
 
