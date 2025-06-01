@@ -5,7 +5,7 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    // Enable Preact to support Preact JSX components.
+    // Enable Vue for Vue components
     vue(),
     tailwind(),
   ],

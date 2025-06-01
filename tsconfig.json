@@ -1,9 +1,35 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "esnext",
-    "jsx": "preserve"
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "declaration": false,
+    "outDir": "./dist/",
+    "removeComments": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "isolatedModules": true
   },
-  "moduleResolution": "node",
-  "types": ["vite/client"]
+  "include": ["src/**/*", "public/**/*"],
+  "exclude": ["dist", "node_modules"]
 }
