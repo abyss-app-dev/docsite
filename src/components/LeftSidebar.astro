@@ -1,5 +1,5 @@
 ---
-import { SIDEBAR, RELEASE_LOG_SIDEBAR } from '../config';
+import { SIDEBAR } from '../config';
 
 interface SidebarItem {
 	text: string;
@@ -12,7 +12,7 @@ const currentPageMatch = currentPage.slice(1);
 
 // Determine which sidebar to show based on current page
 const isReleaseLogPage = currentPage.startsWith('/release-log');
-const sidebarItems = isReleaseLogPage ? RELEASE_LOG_SIDEBAR : SIDEBAR;
+const sidebarItems =  SIDEBAR;
 
 const isCurrentPage = (item: SidebarItem) => {
 	if (item.link) {
